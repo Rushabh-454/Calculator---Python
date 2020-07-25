@@ -9,10 +9,10 @@ def evaluatePostfix(exp):
             stack.append(char)
 
         else:
-            op2 = stack.pop()
-            op1 = stack.pop()
-            
             try:
+                op2 = stack.pop()
+                op1 = stack.pop()
+
                 if char == '+':
                     stack.append(op1+op2)
                 elif char == '-':
@@ -25,7 +25,11 @@ def evaluatePostfix(exp):
             except ZeroDivisionError:
                 messagebox.showerror("Error", "Division by zero!")
                 return
-    
+
+            except:
+                messagebox.showerror("Error", "Invalid Expression!")
+                return
+
     if len(stack) > 1:
         messagebox.showerror("Error", "Invalid Expression!")
         return

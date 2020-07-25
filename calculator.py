@@ -22,7 +22,7 @@ def button_click(character):
         if current == []:
             character = '('
         else:
-            if current[-1] not in operators + ['.', '(']:
+            if current[-1] not in operators + ['(']:
                 character = ''
                 flag = False
 
@@ -43,17 +43,15 @@ def button_click(character):
         flag = False
 
     current = e.get()
-    e.delete(0, END)
-
+    
     if character in operators + ['(', ')'] and flag:
         character = ' ' + character + ' '
 
-    e.insert(0, current+character)
+    e.insert(END, character)
 
 def button_equal():
     infix = e.get().split()
-    print(infix)
-    
+        
     bracket = 0
     for char in infix:
         if char == '(':
