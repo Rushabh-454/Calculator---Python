@@ -7,7 +7,7 @@ Run `calculator.py` to start the calculator.
 + pillow - `pip install pillow`
 
 ## Description
-It is a simple calculator that uses tkinter for creating the GUI and can perfrom basic arithmetic operations like addition, subtraction, multiplication and division.
+It is a simple calculator that uses tkinter for creating the GUI and can perform basic arithmetic operations like addition, subtraction, multiplication and division.
 
 ## Files included
 + `calculator.py` - It is the main file where the GUI is implemented.
