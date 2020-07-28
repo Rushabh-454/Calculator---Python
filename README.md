@@ -2,6 +2,8 @@
 
 Run `calculator.py` to start the calculator.
 
+![Calculator UI](https://github.com/Rushabh-454/Calculator-Python/blob/master/CalculatorUI.PNG "Calculator")
+
 ## Packages required
 + tkinter - comes pre-installed with python
 + pillow - `pip install pillow`
